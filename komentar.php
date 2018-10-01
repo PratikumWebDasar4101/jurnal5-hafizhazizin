@@ -20,7 +20,8 @@
         $name = $_POST['name'];
         $komentar = $_POST['komentar'];
 
-        $count =strlen($komentar);
+        $data_komentar = explode(" ", $komentar);
+        $count =count($data_komentar);
 
         if($count < 5){
             echo "komentar  harus lebih dari 5 ";
